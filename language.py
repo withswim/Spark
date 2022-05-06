@@ -25,3 +25,4 @@ df_language50_want = df_language_want.sort("count", ascending=False).limit(50)
 df_language50_have.write.mode('overwrite').csv(S3_DATA_OUTPUT_PATH)
 df_language50_want.write.mode('overwrite').csv(S3_DATA_OUTPUT_PATH)
 
+print('Selected data is successfully saved to S3: {}'.format(S3_DATA_OUTPUT_PATH))
